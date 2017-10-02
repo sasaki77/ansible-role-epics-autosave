@@ -1,0 +1,8 @@
+epics_autosave_module:
+  name: "autosave"
+  type: "soft"
+  ver: "5-7-1"
+  url: "https://github.com/epics-modules/autosave/archive/R5-7-1.tar.gz"
+  unarchived_name: "autosave-R5-7-1"
+  configure_release:
+      - {name: "EPICS_BASE", path: "{{ epics_base_base_name }}", reg: "^(.*)EPICS_BASE(.*)=(.*)$"}
