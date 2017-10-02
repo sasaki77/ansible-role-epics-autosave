@@ -7,7 +7,7 @@
   loop_control:
     loop_var: module
 
-- name: Common task for autosave module
+- name: Configure release for autosave module
   include_role: 
     name: ansible-role-epics-base
     tasks_from: module_configure_release
@@ -16,7 +16,7 @@
   loop_control:
     loop_var: module
 
-- name: Common task for autosave module
+- name: Make autosave module
   include_role: 
     name: ansible-role-epics-base
     tasks_from: module_make
